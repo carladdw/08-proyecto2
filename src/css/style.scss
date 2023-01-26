@@ -1,0 +1,26 @@
+// Variables 
+$azul: #3b04dc;
+@mixin centrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Header
+#logo{
+    width: 8rem;
+  }
+
+// Intro
+#intro{
+  background-image: url('https://images01.nicepage.com/35/e9/35e98f8fb8e448241dda4f6d96c96725.jpeg');
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-color: $azul;
+  background-size: 50%;
+  @include centrar;
+  h2{
+    color: white;
+    font-size: 8em;
+  }
+}

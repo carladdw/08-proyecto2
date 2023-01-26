@@ -1,0 +1,26 @@
+#logo {
+  width: 8rem;
+}
+
+#intro {
+  background-image: url("https://images01.nicepage.com/35/e9/35e98f8fb8e448241dda4f6d96c96725.jpeg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-color: #3b04dc;
+  background-size: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro h2 {
+  color: white;
+  font-size: 8em;
+}
+/*# sourceMappingURL=style.css.map */
