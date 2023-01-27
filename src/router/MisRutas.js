@@ -1,5 +1,6 @@
 import React from 'react';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {Routes, Route, BrowserRouter,Navigate} from 'react-router-dom';
+import '../css/style.css';
 // Componentes
 import {Contacto} from '../components/Contacto';
 import {Curriculum} from '../components/Curriculum';
@@ -17,13 +18,14 @@ export const MisRutas = () => {
 			<HeaderNav />
 			{/**Contenido Central */}
 			<Routes>
-				<Route path="/" element={<Inicio />} />
+				<Route path="/" element={<Navigate to="/inicio"/>} />
 				<Route path="/inicio" element={<Inicio />} />
 				<Route path="/curriculum" element={<Curriculum />} />
 				<Route path="/contacto" element={<Contacto />} />
 				<Route path="/servicios" element={<Servicios />} />
 				<Route path="/portafolio" element={<Portafolio />} />
 			</Routes>
+
 			{/**Footer */}
 			<Footer />
 		</BrowserRouter>
