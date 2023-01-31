@@ -59,26 +59,13 @@ export const Inicio = () => {
 			<section id="friday_mood" className="container">
 				<div className="row">
 					<div className="col-3 d-flex align-items-center">
-						<p>Friday Mood At Maximum, Time For Design Fun!</p>
+						<p className="text">Friday Mood At Maximum, Time For Design Fun!</p>
 					</div>
-					<img
-						className="col-3"
-						src="https://images01.nicepage.com/d8/e4/d8e430f2e3158287bf4a63fd78ed8e9c.jpeg"
-						alt="perro peludo azul"
-					/>
-					<img
-						className="col-3"
-						src="https://images01.nicepage.com/2e/9c/2e9cf47e954ed55eac9ee2b71430997f.jpeg"
-						alt=""
-					/>
-					<img
-						className="col-3"
-						src="https://images01.nicepage.com/7d/fa/7dfa2d6189c272c3b17b432f75d9a5e1.jpeg"
-						alt=""
-					/>
+					<div className="col-9">
+					<ListadoTrabajos limite="3"/>
+					</div>
 				</div>
 			</section>
-			<ListadoTrabajos limite="2"/>
 		</div>
 	);
 };
