@@ -6,7 +6,11 @@ export const HeaderNav = () => {
 			<nav className="navbar navbar-expand-lg bg-white">
 				<div className="container">
 					<NavLink className="navbar-brand" to="/inicio">
-            <img id="logo" src="https://images01.nicepage.com/21/d9/21d9faf766ba46f8f22b24f07b317315.png" alt="logo nicepage" />
+						<img
+							id="logo"
+							src="https://images01.nicepage.com/21/d9/21d9faf766ba46f8f22b24f07b317315.png"
+							alt="logo nicepage"
+						/>
 					</NavLink>
 					<button
 						className="navbar-toggler"
@@ -18,22 +22,24 @@ export const HeaderNav = () => {
 						aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
 					</button>
-					<div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+					<div
+						className="collapse navbar-collapse justify-content-end"
+						id="navbarNavAltMarkup">
 						<div className="navbar-nav">
 							<NavLink to="/inicio" className="nav-link">
-								Inicio
+								Home
 							</NavLink>
 							<NavLink to="/curriculum" className="nav-link">
-								Curriculum   
-							</NavLink>
-							<NavLink to="/contacto" className="nav-link">
-								Contacto
+								Resume
 							</NavLink>
 							<NavLink to="/servicios" className="nav-link">
-								Servicios
+								Services
 							</NavLink>
 							<NavLink to="/portafolio" className="nav-link">
 								Portafolio
+							</NavLink>
+							<NavLink to="/contacto" className="nav-link">
+								Contact me
 							</NavLink>
 						</div>
 					</div>

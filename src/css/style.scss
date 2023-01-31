@@ -1,26 +1,192 @@
-// Variables 
+// Variables y clases generales
 $azul: #3b04dc;
-@mixin centrar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+$naranja: #ffb71c;
+$negro: #333333;
+$azul_oscuro: #2b2933;
+@mixin centrar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin linea_top($color: $naranja) {
+	content: '';
+	width: 10rem;
+	height: 0.3rem;
+	display: block;
+	margin-bottom: 2rem;
+	background-color: $color;
+}
+p,
+strong {
+	font-size: 1.1rem;
+}
+.boton {
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	font-size: 1rem;
+	border: solid white 1px;
+	padding: 0.5rem 2rem;
+	text-transform: uppercase;
+}
+.boton:hover {
+	color: $negro;
+	background-color: white;
+}
+.btn-naranja {
+	border-color: $naranja;
+	color: $naranja;
 }
 
 // Header
-#logo{
-    width: 8rem;
-  }
-
+nav {
+	#logo {
+		width: 8rem;
+	}
+	.active {
+		color: $naranja !important;
+	}
+	a {
+		font-weight: 500 !important;
+	}
+}
+//Footer
+footer {
+	color: white;
+	.footer_logo {
+		height: 17rem;
+		background-color: $azul_oscuro;
+		@include centrar;
+	}
+	.copy {
+		background-color: $negro;
+		height: 8rem;
+		@include centrar;
+		p {
+			margin: 0;
+		}
+		a {
+			color: white;
+		}
+	}
+}
 // Intro
-#intro{
-  background-image: url('https://images01.nicepage.com/35/e9/35e98f8fb8e448241dda4f6d96c96725.jpeg');
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-color: $azul;
-  background-size: 50%;
-  @include centrar;
-  h2{
-    color: white;
-    font-size: 8em;
-  }
+#intro {
+	background-image: url('https://images01.nicepage.com/35/e9/35e98f8fb8e448241dda4f6d96c96725.jpeg');
+	height: 90vh;
+	background-repeat: no-repeat;
+	background-color: $azul;
+	background-size: 50%;
+	@include centrar;
+	flex-direction: column;
+	h2 {
+		color: white;
+		font-size: 8em;
+		margin-bottom: 2rem;
+	}
+}
+
+// Container info
+.container_info {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	h3 {
+		font-size: 5rem;
+		font-weight: 200;
+		span {
+			font-weight: 700;
+		}
+	}
+	h3::before {
+		@include linea_top;
+	}
+	p,
+	strong {
+		line-height: 2rem;
+		margin-top: 2rem;
+	}
+	strong {
+		margin-bottom: 2rem;
+		font-weight: 500;
+	}
+	.datos {
+		margin-top: 2rem;
+		h4 {
+			color: rgb(131, 131, 131);
+			font-size: 1.2rem;
+			font-weight: 400;
+		}
+		p {
+			font-weight: 700;
+			line-height: 0rem;
+			margin: 2rem 0rem 3rem 0rem;
+		}
+	}
+}
+
+//Friday Mood
+#friday_mood {
+	margin-bottom: 10rem;
+	p {
+		font-weight: 600;
+		font-size: 2.3rem;
+	}
+}
+
+//Curriculum
+.bg-gris {
+	background-color: rgba(125, 125, 125, 0.074) !important;
+}
+#curriculum {
+	.card {
+		border: none;
+		transition: 1s;
+	}
+	.card:hover {
+		background-color: $naranja;
+		box-shadow: 10px 10px 37px 0px rgba(0, 0, 0, 0.186);
+	}
+}
+
+//Servicios
+#servicios {
+	.skill {
+		background-color: $azul;
+		min-height: 25rem;
+		display: flex;
+		align-items: center;
+		margin-top: 4rem;
+		h4 {
+			color: $naranja;
+			font-size: 1.8rem;
+		}
+		.fa-solid {
+			margin-bottom: 1rem;
+			color: $naranja;
+			font-size: 3rem;
+		}
+		p {
+			color: white;
+			padding-right: 2rem;
+			font-size: 1.2rem;
+			line-height: 2.3rem;
+		}
+	}
+}
+
+//Lista Trabajos
+#trabajos {
+	margin-top: 2rem;
+	margin-bottom: 7rem;
+	.card-text {
+		margin-top: 0;
+		line-height: 1.5rem;
+	}
+	.card-img-top {
+		height: 12rem;
+		object-fit: cover;
+	}
+	.trabajos{
+		grid-gap: 26px 0px;
+	}
 }

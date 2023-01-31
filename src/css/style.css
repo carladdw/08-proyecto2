@@ -1,5 +1,78 @@
-#logo {
+p,
+strong {
+  font-size: 1.1rem;
+}
+
+.boton {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+  border: solid white 1px;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+
+.boton:hover {
+  color: #333333;
+  background-color: white;
+}
+
+.btn-naranja {
+  border-color: #ffb71c;
+  color: #ffb71c;
+}
+
+nav #logo {
   width: 8rem;
+}
+
+nav .active {
+  color: #ffb71c !important;
+}
+
+nav a {
+  font-weight: 500 !important;
+}
+
+footer {
+  color: white;
+}
+
+footer .footer_logo {
+  height: 17rem;
+  background-color: #2b2933;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copy {
+  background-color: #333333;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copy p {
+  margin: 0;
+}
+
+footer .copy a {
+  color: white;
 }
 
 #intro {
@@ -17,10 +90,140 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #intro h2 {
   color: white;
   font-size: 8em;
+  margin-bottom: 2rem;
+}
+
+.container_info {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.container_info h3 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.container_info h3 span {
+  font-weight: 700;
+}
+
+.container_info h3::before {
+  content: '';
+  width: 10rem;
+  height: 0.3rem;
+  display: block;
+  margin-bottom: 2rem;
+  background-color: #ffb71c;
+}
+
+.container_info p,
+.container_info strong {
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.container_info strong {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.container_info .datos {
+  margin-top: 2rem;
+}
+
+.container_info .datos h4 {
+  color: #838383;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.container_info .datos p {
+  font-weight: 700;
+  line-height: 0rem;
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+#friday_mood {
+  margin-bottom: 10rem;
+}
+
+#friday_mood p {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.bg-gris {
+  background-color: rgba(125, 125, 125, 0.074) !important;
+}
+
+#curriculum .card {
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#curriculum .card:hover {
+  background-color: #ffb71c;
+  -webkit-box-shadow: 10px 10px 37px 0px rgba(0, 0, 0, 0.186);
+          box-shadow: 10px 10px 37px 0px rgba(0, 0, 0, 0.186);
+}
+
+#servicios .skill {
+  background-color: #3b04dc;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+#servicios .skill h4 {
+  color: #ffb71c;
+  font-size: 1.8rem;
+}
+
+#servicios .skill .fa-solid {
+  margin-bottom: 1rem;
+  color: #ffb71c;
+  font-size: 3rem;
+}
+
+#servicios .skill p {
+  color: white;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+}
+
+#trabajos {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+
+#trabajos .card-text {
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+
+#trabajos .card-img-top {
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#trabajos .trabajos {
+  grid-gap: 26px 0px;
 }
 /*# sourceMappingURL=style.css.map */
