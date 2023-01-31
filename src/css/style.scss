@@ -127,7 +127,7 @@ footer {
 //Friday Mood
 #friday_mood {
 	margin-bottom: 10rem;
-	p {
+	.text {
 		font-weight: 600;
 		font-size: 2.3rem;
 	}
@@ -177,16 +177,71 @@ footer {
 //Lista Trabajos
 #trabajos {
 	margin-top: 2rem;
-	margin-bottom: 7rem;
 	.card-text {
 		margin-top: 0;
 		line-height: 1.5rem;
+		height: 5.8rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.card-img-top {
 		height: 12rem;
 		object-fit: cover;
 	}
-	.trabajos{
+	.trabajos {
 		grid-gap: 26px 0px;
+	}
+}
+
+//Proyecto
+#proyecto {
+	position: relative;
+	padding-bottom: 20rem;
+	padding-top: 10rem;
+	.detalles {
+		background-color: $azul;
+		height: 40rem;
+		@include centrar;
+		max-width: 80%;
+		strong,
+		small,
+		p {
+			color: white;
+			line-height: 2rem;
+		}
+		small{
+			color: rgba(255, 255, 255, 0.534);
+			font-size: 1.3rem;
+		}
+		h2 {
+			color: $naranja;
+			font-size: 5rem;
+			font-weight: 200;
+		}
+	}
+	img {
+		position: absolute;
+		right: 60px;
+		bottom: 93px;
+		width: 34rem;
+		height: 34rem;
+		object-fit: cover;
+	}
+}
+
+// Error
+#error{
+	.contenido{
+		@include centrar;
+		flex-direction: column;
+		color: white;
+		background-color: $azul;
+		height: 25rem;
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		h2{
+			font-size: 3rem;
+			color: $naranja;
+		}
 	}
 }
