@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { ListadoTrabajos } from './ListadoTrabajos';
 export const Inicio = () => {
 	return (
 		<div>
@@ -77,6 +78,7 @@ export const Inicio = () => {
 					/>
 				</div>
 			</section>
+			<ListadoTrabajos limite="2"/>
 		</div>
 	);
 };

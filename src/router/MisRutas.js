@@ -10,6 +10,8 @@ import Servicios from '../components/Servicios';
 // Layout
 import {Footer} from '../components/layout/Footer';
 import {HeaderNav} from '../components/layout/HeaderNav';
+import { Error } from '../components/Error';
+import { Proyecto } from '../components/Proyecto';
 
 export const MisRutas = () => {
 	return (
@@ -24,6 +26,8 @@ export const MisRutas = () => {
 				<Route path="/contacto" element={<Contacto />} />
 				<Route path="/servicios" element={<Servicios />} />
 				<Route path="/portafolio" element={<Portafolio />} />
+				<Route path="/proyecto/:id" element={<Proyecto />} />
+				<Route path="*" element={<Error />} />
 			</Routes>
 
 			{/**Footer */}

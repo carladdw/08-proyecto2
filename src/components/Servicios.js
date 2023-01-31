@@ -69,7 +69,7 @@ const Servicios = () => {
 								</p>
 							</div>
 							<div className="col-3">
-              <i className="fa-sharp fa-solid fa-brush"></i>
+								<i className="fa-sharp fa-solid fa-brush"></i>
 								<h4>Creative</h4>
 								<p>
 									Creative Lorem ipsum dolor sit amet, consectetur adipiscing

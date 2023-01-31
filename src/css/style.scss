@@ -24,7 +24,7 @@ strong {
 	text-decoration: none;
 	font-weight: 700;
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	border: solid white 1px;
 	padding: 0.5rem 2rem;
 	text-transform: uppercase;
@@ -32,6 +32,10 @@ strong {
 .boton:hover {
 	color: $negro;
 	background-color: white;
+}
+.btn-naranja {
+	border-color: $naranja;
+	color: $naranja;
 }
 
 // Header
@@ -85,7 +89,7 @@ footer {
 // Container info
 .container_info {
 	padding-top: 10rem;
-  padding-bottom: 10rem;
+	padding-bottom: 10rem;
 	h3 {
 		font-size: 5rem;
 		font-weight: 200;
@@ -136,36 +140,53 @@ footer {
 #curriculum {
 	.card {
 		border: none;
-    transition: 1s;
+		transition: 1s;
 	}
-  .card:hover{
-    background-color: $naranja;
-    box-shadow: 10px 10px 37px 0px rgba(0, 0, 0, 0.186);
-  }
+	.card:hover {
+		background-color: $naranja;
+		box-shadow: 10px 10px 37px 0px rgba(0, 0, 0, 0.186);
+	}
 }
 
 //Servicios
 #servicios {
-  .skill{
-    background-color: $azul;
-    min-height: 25rem;
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
-    h4{
-      color: $naranja;
-      font-size: 1.8rem;
-    }
-    .fa-solid{
-      margin-bottom: 1rem;
-      color: $naranja;
-      font-size: 3rem;
-    }
-    p{
-      color: white;
-      padding-right: 2rem;
-      font-size: 1.2rem;
-      line-height: 2.3rem;
-    }
-  }
+	.skill {
+		background-color: $azul;
+		min-height: 25rem;
+		display: flex;
+		align-items: center;
+		margin-top: 4rem;
+		h4 {
+			color: $naranja;
+			font-size: 1.8rem;
+		}
+		.fa-solid {
+			margin-bottom: 1rem;
+			color: $naranja;
+			font-size: 3rem;
+		}
+		p {
+			color: white;
+			padding-right: 2rem;
+			font-size: 1.2rem;
+			line-height: 2.3rem;
+		}
+	}
+}
+
+//Lista Trabajos
+#trabajos {
+	margin-top: 2rem;
+	margin-bottom: 7rem;
+	.card-text {
+		margin-top: 0;
+		line-height: 1.5rem;
+	}
+	.card-img-top {
+		height: 12rem;
+		object-fit: cover;
+	}
+	.trabajos{
+		grid-gap: 26px 0px;
+	}
 }
